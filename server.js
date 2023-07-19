@@ -51,9 +51,9 @@ const server = new ApolloServer({
   },
   plugins: [
     ApolloServerPluginDrainHttpServer({ httpServer }),
-    process.env.NODE_ENV != "production"
-      ? ApolloServerPluginLandingPageGraphQLPlayground()
-      : ApolloServerPluginLandingPageDisabled(),
+    // process.env.NODE_ENV != "production"
+    //   ? ApolloServerPluginLandingPageGraphQLPlayground()
+    //   : ApolloServerPluginLandingPageDisabled(),
   ],
 });
 
